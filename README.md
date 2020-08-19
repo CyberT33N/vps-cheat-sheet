@@ -185,3 +185,6 @@ sudo service apache2 restart
 
 ## Connect to VM Instance via Putty
 https://www.youtube.com/watch?v=fmh94mNQHQc
+
+If you get error **Disconnected: No supported authentication methods available (server sent: publickey)** then go to metadata and change enable-oslogin to **FALSE**
+
