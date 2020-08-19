@@ -188,3 +188,50 @@ https://www.youtube.com/watch?v=fmh94mNQHQc
 
 If you get error **Disconnected: No supported authentication methods available (server sent: publickey)** then go to metadata and change enable-oslogin to **FALSE** (https://cloud.google.com/compute/docs/oslogin/manage-oslogin-in-an-org)
 
+
+
+<br />
+<br />
+
+
+ _____________________________________________________
+ _____________________________________________________
+
+
+<br />
+<br />
+
+# Ubuntu
+
+
+## Add user
+```bash
+sudo adduser yourusernamehere
+```
+
+
+## Change password of user
+```bash
+sudo passwd yourusernamehere
+```
+
+
+
+<br />
+<br />
+
+
+ _____________________________________________________
+ _____________________________________________________
+
+
+<br />
+<br />
+
+# Node.js
+
+## Install Node.js (Ubuntu/Linux Mint)
+```bash
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
