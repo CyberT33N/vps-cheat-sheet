@@ -241,3 +241,26 @@ sudo apt-get install -y nodejs
 npm i express
 ```
 
+## Where to locate Node.js projects
+The /opt directory is a good location for the program distribution files. The /srv directory is used for the programs run-time data. (Please see the Filesystem Hierarchy Standard.) Unlike the /etc directory where the standard indicates that the /opt/<pkg> configuration files should be placed in /etc/opt/<pkg>, there is no standardization that /srv/opt/<pkg> should be a parallel structure (although it's probably not a bad idea).
+```bash
+/opt/webserver/     (your node.js application)
+    server.js
+    package.json
+    node_modules/
+    ...
+
+/etc/opt/webserver/
+    config.json     (configuration file for your web server)
+
+/srv/opt/webserver/ (opt subdirectory suggested, but not required)
+    index.html
+    images/
+    css/
+    ...
+
+/var/opt/webserver
+    error.log
+    request.log
+```
+
