@@ -179,3 +179,9 @@ sudo service apache2 restart
 
 <br />
 <br />
+
+
+#Gcloud
+
+## Connect to VM Instance via Putty
+https://www.youtube.com/watch?v=fmh94mNQHQc
