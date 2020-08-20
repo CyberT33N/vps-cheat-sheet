@@ -5,7 +5,7 @@ VPS Cheat Sheet with the most needes stuff...
 
 
 
-# Ubuntu
+# Debian
 
 ## Permission
 
@@ -14,8 +14,15 @@ VPS Cheat Sheet with the most needes stuff...
 sudo chown username:group -R * /var/www/html/sample
 ```
 
+#### Convert dos 2 unix
+When you create files on windows there are different new lines than on mac/linux! You can convert these files by using dos2unix
+```bash
+# convert all files in folder recursive
+find . -type f -exec dos2unix {} ;
 
-
+# Or manually each file
+dos2unix thescript.sh
+```
 
 <br />
 <br />
