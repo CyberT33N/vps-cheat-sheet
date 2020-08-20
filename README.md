@@ -18,11 +18,29 @@ sudo chown username:group -R * /var/www/html/sample
 When you create files on windows there are different new lines than on mac/linux! You can convert these files by using dos2unix
 ```bash
 # convert all files in folder recursive
+#method 1
 find . -type f -exec dos2unix {} ;
+#method 2
+find . -type f -print0 | xargs -0 dos2unix
 
 # Or manually each file
 dos2unix thescript.sh
 ```
+
+#### Create folder
+```bash
+mkdir foldername
+```
+
+#### Delete folder recursive
+```bash
+rm -rf lampp
+```
+
+
+
+
+
 
 <br />
 <br />
