@@ -13,8 +13,10 @@ VPS Cheat Sheet with the most needes stuff...
 - https://www.youtube.com/watch?v=Mw6QvsChxo4
 - CTRL+a+c - New terminal window
 - CTRL+a+n - Switch between open terminal windows
-
-
+```bash
+# Open again terminals inside of screen after you close your connection
+screen -r
+```
 
 
 #### Swap Space
@@ -50,6 +52,19 @@ rm -rf lampp
 
 
 
+
+
+
+#### Add user
+```bash
+sudo adduser yourusernamehere
+```
+
+
+#### Change password of user
+```bash
+sudo passwd yourusernamehere
+```
 
 
 
@@ -267,32 +282,7 @@ If you get error **Disconnected: No supported authentication methods available (
 <br />
 <br />
 
-# Ubuntu
 
-
-## Add user
-```bash
-sudo adduser yourusernamehere
-```
-
-
-## Change password of user
-```bash
-sudo passwd yourusernamehere
-```
-
-
-
-<br />
-<br />
-
-
- _____________________________________________________
- _____________________________________________________
-
-
-<br />
-<br />
 
 # Node.js
 
