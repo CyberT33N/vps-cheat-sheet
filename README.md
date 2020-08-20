@@ -9,7 +9,7 @@ VPS Cheat Sheet with the most needes stuff...
 
 ## Permission
 
-#### Change permission of folder and subfolders
+#### Change user/group permission of folder and subfolders
 ```bash
 sudo chown username:group -R * /var/www/html/sample
 ```
