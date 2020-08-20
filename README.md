@@ -9,6 +9,9 @@ VPS Cheat Sheet with the most needes stuff...
 
 ## Permission
 
+#### Swap Space
+- https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
+
 #### Change user/group permission of folder and subfolders
 ```bash
 sudo chown username:group -R * /var/www/html/sample
