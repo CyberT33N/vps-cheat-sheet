@@ -9,6 +9,9 @@ VPS Cheat Sheet with the most needes stuff...
 
 ## Permission
 
+#### screen (managa terminal windows)
+- https://www.youtube.com/watch?v=Mw6QvsChxo4
+
 #### Swap Space
 - https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
 
