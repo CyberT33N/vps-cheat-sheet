@@ -3,6 +3,33 @@ VPS Cheat Sheet with the most needes stuff...
 
 
 
+
+
+# Ubuntu
+
+## Permission
+
+#### Change permission of folder and subfolders
+```bash
+sudo chown username:group -R * /var/www/html/sample
+```
+
+
+
+
+<br />
+<br />
+
+
+ _____________________________________________________
+ _____________________________________________________
+
+
+<br />
+<br />
+
+
+
 # Domain
 
 ## Connect domain to server using Apache
