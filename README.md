@@ -252,6 +252,9 @@ https://www.youtube.com/watch?v=fmh94mNQHQc
 If you get error **Disconnected: No supported authentication methods available (server sent: publickey)** then go to metadata and change enable-oslogin to **FALSE** (https://cloud.google.com/compute/docs/oslogin/manage-oslogin-in-an-org)
 
 
+## Backup VM Instance
+- https://www.cloudbooklet.com/how-to-backup-google-cloud-compute-engine/
+- https://cloud.google.com/compute/docs/disks/create-snapshots?hl=en
 
 <br />
 <br />
