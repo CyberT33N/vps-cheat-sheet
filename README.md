@@ -192,6 +192,20 @@ sudo service apache2 restart
 ```
 
 
+
+## SSL
+You must have domains setup already of course with virtual hosts. Then run:
+```bash
+sudo apt-get update
+sudo apt-get install python-letsencrypt-apache
+sudo letsencrypt --apache -d cybert33n.com -d www.cybert33n.com
+
+# test if auto renew is enabled
+sudo certbot renew --dry-run
+```
+
+
+
 <br />
 <br />
 
@@ -283,6 +297,120 @@ If you get error **Disconnected: No supported authentication methods available (
 <br />
 
 
+# Webmin
+
+## Build SMTP mail server
+- https://www.youtube.com/watch?v=ayalsV9iPws
+
+
+## Remove Google Auth
+```bash
+sudo sed -i 's/totp//g' /etc/webmin/miniserv.users
+sudo sed -i '/twofactor_provider=totp/d' /etc/webmin/miniserv.conf
+sudo /etc/init.d/webmin restart
+```
+
+## SSL on webmin login
+Create a virtualhost on your server and ssl it with letsencrypt
+<br />once its running  go to  webmin > webmin configuration > ssl encryption > lets encrypt and then select your domain
+<br />webmin will download and use the already setup ssl certificate..
+
+
+## SSL menu can not be found
+Go to system settings > features and plugins and enable ssl on websites 
+
+
+
+
+
+
+
+
+
+## Get better email score for own email from smtp 
+- https://www.youtube.com/watch?v=N7BmgJWnztk
+<br /><br />
+SPF, DKIM, rDNS, MX is needed
+
+<br /><br />
+MX:
+- https://www.namecheap.com/support/knowledgebase/article.aspx/322/2237/how-can-i-set-up-mx-records-required-for-mail-service
+
+<br /><br />
+go to mail settings and choose custom mx record:
+<br />type: mx record
+<br />host: @
+<br />value: mail.cybert33n.com
+<br />priority: 1
+<br />ttl: automatic
+
+
+
+
+
+<br /><br />
+DKIM:
+<br />virtualmin > email settings > domainkey identifier
+<br />Signing of outgoing mail enabled?	 Yes
+<br />add main domain and sub domain at domain field
+
+
+
+
+
+
+<br /><br />
+reverse dns:
+<br />reverse dns can be done on digital ocean by change droplet name to the domain name.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br />
+SPF:
+Server Configuration > DNS OPTIONS
+<br />SPF record enabled?	 Yes
+<br />allowed sender hostnames, domain and included domains  add domain and sub domain
+<br />DMARC record enabled?	 Yes
+<br />DNSSEC signature enabled?	 Yes
+<br /><br />System settings > server template > default settings > BIND DNS DOMAIN
+<br />Hostname for MX record	 Default 
+<br />Master DNS server hostname	 Hostname(enter main domain which webmin is using)
+<br />Add SPF DNS record?	  Yes, with server's IP address
+<br />additioanal spf ips + addtional spf included domain add main domain and subdomain
+<br />Does SPF record cover all senders? Yes, and deny other senders
+<br />Add DMARC DNS record?	 Yes, with policy below
+<br />Create DNSSEC key and sign new domains?	 yes
+<br />DNSSEC cryptographic algorithm     rssha256
+
+
+
+<br /><br />
+DNSSEC: activate at domain hoster at dns section
+
+
+<br />
+<br />
+
+
+ _____________________________________________________
+ _____________________________________________________
+
+
+<br />
+<br />
 
 # Node.js
 
