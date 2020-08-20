@@ -11,6 +11,11 @@ VPS Cheat Sheet with the most needes stuff...
 
 #### screen (managa terminal windows)
 - https://www.youtube.com/watch?v=Mw6QvsChxo4
+- CTRL+a+c - New terminal window
+- CTRL+a+n - Switch between open terminal windows
+
+
+
 
 #### Swap Space
 - https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
