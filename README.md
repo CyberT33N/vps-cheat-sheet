@@ -7,8 +7,10 @@ VPS Cheat Sheet with the most needes stuff...
 
 # Debian
 
-
-
+## Restart server
+```bash
+sudo shutdown -r now
+```
 
 
 ## Utils
