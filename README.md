@@ -7,25 +7,20 @@ VPS Cheat Sheet with the most needes stuff...
 
 # Debian
 
-## Permission
 
-#### screen (managa terminal windows)
-- https://www.youtube.com/watch?v=Mw6QvsChxo4
-- CTRL+a+c - New terminal window
-- CTRL+a+n - Switch between open terminal windows
+
+
+
+## Utils
+
+#### Check current disc storage
 ```bash
-# Open again terminals inside of screen after you close your connection
-screen -r
+df -h
 ```
-
-
 #### Swap Space
 - https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
 
-#### Change user/group permission of folder and subfolders
-```bash
-sudo chown username:group -R * /var/www/html/sample
-```
+
 
 #### Convert dos 2 unix
 When you create files on windows there are different new lines than on mac/linux! You can convert these files by using dos2unix
@@ -40,6 +35,30 @@ find . -type f -print0 | xargs -0 dos2unix
 dos2unix thescript.sh
 ```
 
+
+
+
+
+
+## Monitor
+
+
+#### screen (managa terminal windows)
+- https://www.youtube.com/watch?v=Mw6QvsChxo4
+- CTRL+a+c - New terminal window
+- CTRL+a+n - Switch between open terminal windows
+```bash
+# Open again terminals inside of screen after you close your connection
+screen -r
+```
+
+
+
+
+
+
+
+
 #### Create folder
 ```bash
 mkdir foldername
@@ -53,6 +72,20 @@ rm -rf lampp
 
 
 
+
+
+
+
+
+
+## Permission
+
+
+
+#### Change user/group permission of folder and subfolders
+```bash
+sudo chown username:group -R * /var/www/html/sample
+```
 
 
 #### Add user
