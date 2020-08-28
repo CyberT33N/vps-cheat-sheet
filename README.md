@@ -308,7 +308,10 @@ sudo service apache2 restart
 <br />
 
 
-# Gcloud
+# Google Cloud
+
+## Socket hang up error at express
+- In some cases you may Socket hang up errors when you use port 80 for your express server. Make sure to use a different port like as example 1337 (https://www.youtube.com/watch?v=JmjqPpQdtW8)
 
 ## Connect to VM Instance via Putty
 https://www.youtube.com/watch?v=fmh94mNQHQc
