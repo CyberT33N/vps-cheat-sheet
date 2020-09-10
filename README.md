@@ -12,6 +12,9 @@ VPS Cheat Sheet with the most needes stuff...
 sudo shutdown -r now
 ```
 
+<br />
+<br />
+
 
 ## Utils
 
@@ -19,8 +22,26 @@ sudo shutdown -r now
 ```bash
 df -h
 ```
+
+
+
+
 #### Swap Space
 - https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
+```bash
+sudo fallocate -l 3G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo cp /etc/fstab /etc/fstab.bak
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+
+## add to sysctl.conf for permanently change..
+sudo nano /etc/sysctl.conf
+vm.swappiness=10
+vm.vfs_cache_pressure=50
+```
+
 
 
 
@@ -39,6 +60,9 @@ dos2unix thescript.sh
 
 
 
+<br />
+<br />
+
 
 
 
@@ -55,6 +79,9 @@ screen -r
 ```
 
 
+
+<br />
+<br />
 
 
 
@@ -75,6 +102,10 @@ rm -rf lampp
 
 
 
+
+
+<br />
+<br />
 
 
 
