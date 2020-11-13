@@ -4,6 +4,45 @@ VPS Cheat Sheet with the most needes stuff...
 
 
 
+<br />
+<br />
+
+
+ _____________________________________________________
+ _____________________________________________________
+
+
+<br />
+<br />
+
+
+# SSH
+- https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804-de
+
+## Generating public/private ecdsa key pair.
+```bash
+ssh-keygen -t ecdsa -b 521
+
+## register key to server
+ssh-copy-id -i ~/.ssh/id_ecdsa username@1.23.45.678
+```
+
+
+
+<br />
+<br />
+
+
+ _____________________________________________________
+ _____________________________________________________
+
+
+<br />
+<br />
+
+
+
+
 
 # Debian
 
